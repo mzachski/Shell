@@ -77,7 +77,8 @@ func handleInput(w io.Writer, input string, exit chan<- struct{}) error {
 	case "pwd":
 		builtins.PrintWorkingDirectory()
 	case "cat":
-		return builtins.Concatenate(args...)
+		filename := args[0]
+		return builtins.Concatenate(filename)
 	case "cd":
 		return builtins.ChangeDirectory(args...)
 	case "env":
