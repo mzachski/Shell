@@ -74,6 +74,8 @@ func handleInput(w io.Writer, input string, exit chan<- struct{}) error {
 	// Check for built-in commands.
 	// New builtin commands should be added here. Eventually this should be refactored to its own func.
 	switch name {
+	case "ps":
+		builtins.ProcessStatus()
 	case "mkdir":
 		directory := args[0]
 		return builtins.MakeDirectory(directory)
