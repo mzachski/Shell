@@ -35,3 +35,15 @@ As an example, two shell builtins have already been added to the package builtin
       - "github.com/jh125486/CSCE4600/Project2/builtins" changes to "github.com/CoolStudent123/CSCE4600/Project2/builtins"
 
 3. Start editing the `main.go` command switch (lines 57-64) and the package `builtins` with your chosen commands.
+
+
+This project is a shell with built in commands written in GO. I've add the following funcitons:
+1. mycat - shows the contents of a file
+2. mymkdir - makes a new directory
+3. mytouch - creates a new file
+4. my-ps - shows current processes
+5. my-pwd - prints current directory
+
+TO RUN:
+1. go build
+2. ./Project2.exe
